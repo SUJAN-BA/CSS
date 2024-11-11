@@ -1,0 +1,36 @@
+h1{
+    text-align: center;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+#p1{
+font-style:oblique;
+text-decoration:underline;
+letter-spacing:12px;
+
+}
+
+#p2{
+    font-size:20px;
+    text-decoration:overline;
+    text-indent:75px;
+    line-height: 5;
+    
+}
+
+#p3{
+    font-weight:900;
+    text-decoration: underline;
+    text-decoration-style:dotted;
+    text-decoration-color:blue;
+
+
+}
+
+#p4{
+    font-variant:small-caps;
+    text-decoration: underline ;
+    text-decoration-color:green;
+    text-decoration-thickness:5px;
+}
+

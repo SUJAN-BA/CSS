@@ -1,0 +1,65 @@
+/* element selector*/
+
+h5 {
+    color:green;
+    background-color: burlywood;
+}
+
+/* class selector*/
+
+.header{
+    color:palevioletred;
+    background-color: silver;
+    
+}
+
+/*id selector */
+
+#firstdiv{
+    color:orange;
+}
+
+/* child selector */
+
+div > p{
+    color:blue
+}
+
+/* no work 
+div > h4{
+   background-color:brown;
+} */
+
+/*descendent selctor*/
+
+div h4{
+    color:orangered;
+}
+
+/*universal selector
+
+*{
+    margin:0;
+    padding:0;
+
+}
+
+*/
+
+/*pseudo selectors*/
+
+a:visited{
+    color:darkorange;
+}
+
+a:link{
+    color:darkmagenta;/*coloring the link*/
+}
+
+a:active{
+ background-color:blue;   
+}
+
+a:hover{
+    background-color: silver;
+}

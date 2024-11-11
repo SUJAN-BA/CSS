@@ -1,0 +1,51 @@
+<!Doctype html>
+<html lang="en">
+    <head>
+        <title>float and clear</title>
+
+        <style>
+
+            .c1
+            {
+                border:2px solid black;
+                display:flow-root;
+            }
+
+            .c2{
+                border:2px solid black;
+              
+
+            }
+
+          
+
+            img{
+                float:left;/* change this to right to perform the operation */
+            }
+
+           /* div:nth-child(3){
+                clear:left;
+            } */
+
+          .c2:nth-child(3){/* either we use this syntax or above syntax */
+                clear:left; /* change this to left or both to perform the operation */
+            }
+        </style>
+    </head>
+
+    <body>
+        <div class="c1">
+            <img src="https://images.pexels.com/photos/417074/pexels-photo-417074.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" width="230">
+   <div class="c2">Lorem ipsum dolor sit amet consectetur
+     adipisicing elit. Sit dignissimos magnam eveniet aliquam autem, at
+     natus impedit odit iure sunt.</div>
+   <div class="c2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro dolores saepe
+     vitae ut omnis quasi iure veritatis enim vel placeat, accusantium et illum a delectus! Repellendus placeat fugiat ea autem, eaque ab
+     , inventore quae eveniet eos voluptatum consequuntur voluptatem nisi perferendis repudiandae laborum sequi deserunt? Itaque quam laudantium modi amet rerum perferendis
+      saepe inventore sapiente eos, blanditiis cum expedita molestiae! Nesciunt ipsa praesentium rem repudiandae adipisci aliquid tenetur ratione maiores eos, quam officiis ipsam, veniam asperiores, numquam voluptatibus
+       cum voluptatum velit enim. Cum aliquam explicabo, repellendus recusandae, sed voluptates esse dolores dolore laborum, 
+    deleniti impedit ab minus praesentium autem quam?</div>
+   <div class="c2">class 2</div>
+        </div>
+    </body>
+</html>

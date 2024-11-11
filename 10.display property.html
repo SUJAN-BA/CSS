@@ -1,0 +1,77 @@
+<!Doctype html>
+<html lang="en">
+
+<head>
+    <title>css display property</title>
+
+    <style>
+
+        *{
+            margin:0;
+            padding:0;
+        }
+        /*block to inline */
+        .box{
+         border:2px solid black;
+         margin:10px auto;
+         padding:10px;
+         display:inline-block;
+         width:300px;
+         
+        }
+
+        /*inline to block */
+
+        .box1{
+         border:2px solid black;
+         margin:10px auto;
+         padding:10px;
+         display:block;
+         width:300px;
+         
+        }
+
+        .box2{
+         border:2px solid black;
+         margin:10px auto;
+         padding:10px;
+         width:300px;
+
+         
+        }
+
+        #div{
+            display:none;
+        }
+
+
+        #div1{
+            visibility:hidden;
+        }
+
+
+
+
+    </style>
+</head>
+
+<body>
+    
+    
+    <div class="box">div is a  block element</div>
+    <div class="box">another div content</div>
+    
+    <span class ="box1">i am a</span> 
+    <span class="box1">good boy</span>  
+
+    <div id="div" class="box2">content used for diaplay none box2</div>
+    <div class="box2">in the dipaly none both element and space get removed</div>
+
+    <div id="div1" class="box2">content used for visibility box2</div>
+    <div class="box2">in the visibility hidden only element get removed but space get reserved</div>
+
+
+    </body>
+
+
+</html>

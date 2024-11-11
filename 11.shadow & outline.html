@@ -1,0 +1,47 @@
+<!Doctype html>
+<html lang="en">
+
+<head>
+<title>css shadow and outline</title>
+</head>
+
+<style>
+    .box{
+        margin:10px auto;
+      border:2px solid black;
+      padding:10px;
+
+      box-shadow:5px 5px 15px 5px green ;
+    
+    }
+
+    .box1{
+        margin:70px auto;
+      border:2px solid black;
+      padding:10px;
+
+      box-shadow: inset 5px 5px 15px 5px green;
+    }
+
+    .box2{
+        text-shadow:2px 2px 5px blue;
+    }
+
+    .box1{
+        outline:2px dotted darkred;
+        outline-offset:1px;
+    }
+
+
+</style>
+
+<body>
+    <div class="box">i am the content of div</div>
+    <div class="box1">i am the content of div</div>
+
+    <div class="box2">Lorem ipsum dolor sit amet consectetur
+         adipisicing elit. Quos, quae! Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi obcaecati cum enim voluptate illo? Beatae cum, corporis molestias tempora blanditiis quasi, voluptates maxime vero
+          numquam sit impedit natus, facilis ratione!</div>
+</body>
+
+</html>

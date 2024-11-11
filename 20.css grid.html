@@ -1,0 +1,42 @@
+<!Doctype htm>
+<html land="en">
+    <head>
+        <title>css grid</title>
+        <style>
+            .c1{
+                border:2px solid black;
+               display:grid;
+               height:400px;
+
+               grid-template-columns:100px 120px;
+
+               grid-template-rows:100px 100px;
+                
+            }
+            .c2{
+                border:2px solid black;
+                width:50px;
+                height:50px;
+                margin:4px;
+                background-color: bisque;
+
+            }
+
+            .item-4{/*shuffling the grid item */
+                grid-column:1/2;
+                grid-row:1/2
+            }
+
+        </style>
+    </head>
+
+    <body>
+        <div class="c1">
+           <div class="c2">1</div>
+           <div class="c2">2</div>
+           <div class="c2">3</div>
+           <div class="c2 item-4">4</div>
+           <div class="c2">5</div>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,66 @@
+<!Doctype html>
+<html lang="en">
+    <head>
+        <title>css transform</title>
+        <style>
+            .container{
+                
+                border:2px solid black;
+                width:95vw;
+                height:90vh;
+            }
+            .box{
+                margin:40px;
+             border:2px solid black;
+             width:65px;
+             height:60px;
+            }
+
+            .box1{
+               /* transform:rotate(45deg);*/
+             /*  transform:rotate(0.5turn);*/
+               transform: rotateZ(55deg);/* try rotateX and rotateY*/
+            }
+
+            .box2{
+              /*  transform:scale(1.6);*/
+                transform:scaleX(1.6);/* try y and z or 3d*/
+                
+            }
+
+            .box3{
+                /*transform:skew(34deg);*/
+                transform:skewX(35deg);/* try y note:-thres is no z*/
+            }
+
+            .box4{
+              transform:translateX(100%);/*try y oand z*/
+            }
+
+            .box5{
+                transform:translateX(100%) translateY(55%) skewX(20deg);
+            }
+
+            .box6{
+                transform:rotate(35deg);
+                transform-origin: -0% -0%;
+            }
+
+
+        </style>
+    </head>
+
+    <body>
+        <div class="container">
+   <div class="box box1">rotate</div>
+   <div class="box box2">scale</div>
+   <div class="box box3">skew</div>
+   <div class="box box4">translate</div>
+   <div class="box box5">mixed transform</div>
+   <div class="box box6">transform origin</div>
+
+
+
+        </div>
+    </body>
+</html>

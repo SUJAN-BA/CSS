@@ -1,0 +1,62 @@
+<!Doctype html>
+<html>
+    <head>
+        <title>css variable</title>
+
+        <style>
+
+            :root{/*globel variable*/
+              --color:yellow;
+              --seccolor:silver;
+            }
+
+            *{
+                margin:0;
+                padding:0;
+            }
+
+
+      div:first-child{
+        background-color:var(--color);
+      }
+
+      .c1{
+        --seccolor:violet;/*local variable and color gwt overwritten*/
+
+        background-color:var(--seccolor);
+      }
+
+      li:first-child{
+        background-color: var(--thirdcolor,blue);/*--thirdcolor variable not declare hence blue get apply*/
+      }
+
+            ul{
+     display:flex;
+            }
+
+            li{
+                padding:20px;
+                border:6px solid var(--seccolor);
+                list-style:none;
+                display:flex;
+                padding:20px;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div>
+            <ul>
+                <li>HOME</li>
+                <li>ABOUT</li>
+                <li>LOGIN</li>
+            </ul>
+        </div>
+
+        <div class="c1">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odit provident eaque consequatur in animi ad eum
+             inventore autem dignissimos quo sapiente nesciunt, iusto sit officia
+             beatae nulla doloremque recusandae dolorem exercitationem rem. Eaque enim odio possimus dolor suscipit! Suscipit, inventore?
+        </div>
+    </body>
+</html>

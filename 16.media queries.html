@@ -1,0 +1,80 @@
+<!Doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>media queries</title>
+
+    <style>
+        body{
+            background-color: bisque;
+        }
+
+        /*below 400px color get blue*/
+        @media only screen and (max-width:400px){
+            body{
+                background-color: blue;
+            }
+        }
+
+
+
+                   /*after 400px color get blue*/
+           /* @media only screen and (min-width:400px){
+        
+                body{
+                    background-color:blue;
+                }
+            }
+            */
+
+
+            @media only screen and (max-width:300px){
+                .c{
+                    flex-direction:column;
+                }
+            }
+            .c{
+                display:flex;
+            }
+
+            .box{
+            height:100px;
+            width:100px;
+                margin:10px;
+                padding:20px;
+                background-color: steelblue;
+
+            
+            }
+
+            /*as width increase bordxetr appears*/
+            @media only screen and (orientation:landscape){
+                .box{
+                    border:6px solid black;
+                }
+            }
+
+            /*as widthjdecrease border appear*/
+          /*  @media only screen and (orientation:portrait){
+                .box{
+                    border:6px solid black;
+                }
+            }
+                */
+        
+    </style>
+</head>
+<body>
+    <div>
+        i am a div content
+    </div>
+
+    <div class="c">
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    </div>
+    
+</body>
+</html>

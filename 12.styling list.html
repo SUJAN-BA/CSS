@@ -1,0 +1,76 @@
+<!Doctype html>
+<html>
+    <head>
+  <title>list styling</title>
+  <style>
+    /* to remove the markers or apply the types*/
+    #first{
+        /*list-style:circle*/
+
+        /* or we can use
+        list-style-type:circle*/
+
+        list-style:none ;
+    
+    }
+
+    /*to move marker to list item */
+    #second{
+        background-color:aqua;
+        list-style-position:inside;
+    }
+
+    /*to replace marker with image*/
+    #third{
+        list-style-position:inside;
+        list-style-image:url("https://user-images.githubusercontent.com/14011726/94132137-7d4fc100-fe7c-11ea-8512-69f90cb65e48.gif");
+    }
+
+    /*all operatio in single sintax*/
+    .class{
+        margin:30px;
+        background-color:black;
+        color:white;
+
+        list-style: "🔥" inside ;
+    }
+
+    #id{
+        list-style:inside url("https://user-images.githubusercontent.com/14011726/94132137-7d4fc100-fe7c-11ea-8512-69f90cb65e48.gif")
+    }
+
+    /*creating a nav bar*/
+
+
+.c{
+    list-style:none;
+    display:flex;
+    
+}
+
+.c1{
+    padding:20px;
+}
+
+    
+  </style>
+    </head>
+
+    <body>
+       <ul>
+        <li id="first">home</li>
+        <li id="second">about</li>
+        <li id="third">login</li>
+
+        <li class="class">my name</li>
+        <li class="class">sujan</li>
+        <li class="class" id="id">jsstu</li>
+
+</ul>
+      <ul class="c">
+        <li class="c1">HOME</li>
+        <li class="c1">ABOUT</li>
+        <li class="c1">LOGIN</li>
+       </ul>
+    </body>
+</html>

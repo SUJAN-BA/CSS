@@ -1,0 +1,94 @@
+<!Doctype html>
+<html>
+    <head>
+        <title>css overflow</title>
+
+        <style>
+
+            /*applying scroll bar when overflow occur*/
+
+            .c1{
+                margin:10px;
+                padding:20px;
+                border:2px solid black;
+                height:4vh;
+
+              /*  overflow:scroll;*/
+                overflow:auto;
+            }
+
+            /*hidden the scroll bar*/
+            .c2{
+                margin:10px;
+                padding:20px;
+                border:2px solid black;
+                height:4vh;
+
+                /*overflow:hidden;*/
+
+                /*overflow-x:hidden;
+                overflow-y:auto;*/
+
+                overflow:hidden auto;
+            }
+
+            /*to add scroll bar horizontal*/
+            .c3{
+                
+                margin:10px;
+                padding:20px;
+                border:2px solid black;
+                height:10vh;
+
+                overflow:auto;
+                white-space:nowrap;
+
+
+            }
+
+            .c4{
+                 
+                margin:10px;
+                padding:20px;
+                border:2px solid black;
+                height:4vh;
+                overflow:auto;
+                white-space:nowrap;
+
+
+                white-space:nowrap;
+
+                  text-overflow:ellipsis;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div class="c1">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sed earum dolorum quasi illum 
+            animi perferendis nisi sunt nostrum dicta saepe. Nobis 
+            illum deleniti eos in, earum quos voluptatibus commodi numquam
+             sit atque delectus ut laudantium Lorem Lorem ipsum dolor 
+             sit amet consectetur adipisicing elit.
+              Modi, ea. ipsum dolor sit amet consectetur, adipisicing 
+             elit. Odit, provident!molestiae quas labore officiis sunt?</div>
+
+             <div class="c2">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolores vitae quo magnam
+                 molestiae excepturi quos cupiditate deleniti sapiente explicabo quae dolor, 
+                 fugiat, maiores dolorem distinctio laborum earum voluptates, dolorum esse! Quisquam
+                  fuga provident est iste nisi labore harum dolor pariatur!</div>
+
+
+                  <div class="c3">Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                     Quod numquam Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aspernatur suscipit vitae harum 
+                     exercitationem quis repellendus eligendi magni 
+                     iste perferendis ipsa!
+                      doloremque deleniti recusandae quisquam minus reprehenderit molestiae laudantium. Id,
+                     voluptates.</div>
+
+
+                     <div class="c4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem 
+                        ab nemo rerum necessitatibus aspernatur sequi labore voluptatibus, repudiandae similique ducimus consequatur
+                         modi, aliquam error dolorum architecto explicabo dolore veritatis pariatur, aut laborum vitae? Adipisci maiores delectus harum
+                         laborum culpa libero!</div>
+    </body>
+</html>

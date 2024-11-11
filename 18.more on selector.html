@@ -1,0 +1,65 @@
+<!Doctype html>
+<html lang="en">
+    <head>
+        <title>more on css</title>
+    </head>
+
+    <style>
+    [data-color="primary"]{
+  border:2px solid black
+    }
+
+    p,[data-color="primary"]{
+        color:green;
+    }
+
+    .c2:nth-child(even){
+        background-color: bisque;
+    }
+
+    .c1::before{
+        content:"before content";
+        color:blue;
+
+    }
+
+    .c1::after{
+        content:"after content";
+        color:blue;
+    }
+
+    ::selection{
+        color:white;
+        background-color: black;
+    }
+
+    .c2::first-letter{
+        color:orange;
+        font-size:50px;;
+    }
+
+    #ID::first-line{
+        background-color: silver;
+    }
+
+    input::placeholder{
+        color:violet;
+    }
+    </style>
+
+
+
+
+    <body>
+        <div class="c1">
+        <div data-color="primary" class="c2">hi ,hello</div>
+        <p class="c2">Lorem ipsum dolor sit amet consectetur
+             adipisicing elit. Illum, veniam!</p>
+        <div class="c2">how are u</div>
+        <div class="c2" id="ID">what about you <br>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+            Debitis, officia!</div>
+        </div>
+
+        <input type="text" placeholder="enter the name">
+    </body>
+</html>
